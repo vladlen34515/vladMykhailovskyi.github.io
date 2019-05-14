@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is a Weather site plan.">
+    <meta name="author" content="Vlad Mykhailovskyi">
+    <title>Weather Site Plan</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+        Vlad's <br> Website
+        </h1>
+    </header>
+
+    <nav>
+     <ul>
+         <li><a href="index.html">Home</a></li>
+     </ul>
+    </nav>
+
+    <main>
+    <h1>Weather Site plan</h1>
+
+    <section>
+        <h2>Purpuse</h2>
+        <p>The purpose of <b>The Weather Site</b> is to give current weather conditions in 3 different ways.
+          The initial page will give the weather for the current location based on the Geocoding location information from the device.  
+          The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location determined by a search string.</p>
+    </section>
+
+    <section>
+            <h2>Audience</h2>
+            <p>Primary audience is adults ages 18-30.  Most will be students.
+             Access to the site will be split between mobile devices and laptops.
+              A secondary audience will be anyone interested in weather.</p>
+    </section>
+
+    <section>
+            <h2>Audience Goals: </h2>
+            <p>College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. 
+              They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well.
+              The third goal deals with planning for travels...the ability to get weather conditions for any location will help with last minute packing for road trips.</p>
+    </section>
+
+    <section>
+            <h2>Persona</h2>
+            <ul>
+             <li><img src="img/cool-joe.jpg" alt="The image of persona."></li>
+             <li><b>Name:</b> Joe Cool </li>
+             <li><b>Occupation:</b> student </li>
+             <li><b>Age:</b> Eternally 18 </li>
+             <li><b>Motivation:</b> Joe is not into planning.
+             His last minute scrambling, whether it is getting to class in the morning or heading out on his latest adventure,
+             has left him unprepared for weather conditions many times (He is tired of sleeping in the rain and snow).
+             He would like to be more prepared...without having to put much effort into it...or planning.  </li>
+             <li><b>Environment:</b>  Joe is comfortable using laptops and Mobile devices, he will most often be found on a smart phone however.
+             Many of the places he frequents do not have great signal…he is often dealing with 3G speeds </li>
+            </ul>
+    </section>
+
+    <section>
+        <h2>Content</h2>
+        <p>All weather pages should include location name, current temperature, forecast high, forecast low, current weather descriptor,
+         forecast percentage of precipitation, and current wind speed and direction on small devices and hourly temps should be added on larger screens.
+         The pages of the <i><b>Weather Site</b></i> will be built in the following order:</p>
+        <h3>Pages</h3>
+        <ol>
+          <li><b>Franklin and Greenville</b> weather for each specific location. The weather for these pages should be pulled from the weather.JSON file that will be provided.</li>
+          <li><b>Current:</b> weather for the current location. Current location should be determined by using the Geolocation API of the browser.  This information should be passed to the National Weather Service (NWS) API to retrieve the current conditions.</li> 
+          <li><b>Search:</b> Begins with only a search box, characters entered will cause a list of suggested matches to appear.  Selected location will pull up the weather. </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Styles</h2>
+        <h3>Branding</h3>
+        <p>The client provided the following initial concept for a name and logo:</p>
+        <h1><i><b>The Weather Site</b></i></h1> 
+        <p>The name should be bold & italic</p>
+        <img src="img/logo.jpeg" alt="This is the logo.">
+        <p>This logo can also be rendered using a HTML entity - &amp;#9748;</p>
+        <h3>Typography</h3>
+        <p><b>Heading Font:</b> Sansita From Google Fonts</p>
+        <img src="img/sanita-alphabet.jpg" alt="This is an image of a sanita font.">
+        <p><b>Body copy font:</b> Helvetica</p>
+        <img src="img/helvetica-alphabet.png" alt="Tis is an image of a halvetica font.">
+        <h3>Colors</h3>
+        <img src="img/color-swatches.jpeg" alt="This image shows colors of a website.">
+        <h3>Elements</h3>
+        <p>(add title attribute to each anchor)</p>
+        <h3>Navigation:</h3>
+        <img src="img/weather-nav-bar.png" alt="This is an image of a navigation bar.">
+        <p>Font and color scheme will be determined by you in consultation with your learning team using the supplied fonts and color swatches.</p>
+        <h3>Opaque rounded content box:</h3>
+        <img src="img/weather-tile.png" alt="This is an example how temperature indecator will look like.">
+        <p>background-color: rgba(200,200,200,.6);<br>
+            margin: .2em auto;<br>
+            border: 1px solid;<br>
+            border-radius: 15px
+        </p>
+        <h3>Wireframes</h3>
+        <h3>Small screen</h3>
+        <img src="img/wireframe-small.png" alt="This image shows how our website will look like on a small screen.">
+        <h3>Large Screen</h3>
+        <img src="img/wireframe-large.png" alt="This image shows how our website will look like on a large screen.">
+    </section>
+    
+    </main>
+<footer>
+    <ul>
+    <li>&copy;2019</li>
+    <li>
+     Vladlen Mykhailovskyi
+    </li>
+    <li>Last Updated: 5/13/2019
+    </li>
+    </ul>
+</footer>
+</body>
+</html>
