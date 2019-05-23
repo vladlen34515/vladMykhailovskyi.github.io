@@ -117,8 +117,12 @@ html {
       margin: 0;
     }
    #hourly{
-       overflow: auto;
+
        white-space: nowrap;
+   }
+   #scroll
+   {
+    overflow: auto;
    }
 
    #max{
