@@ -6,29 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="This is weather website for Franklin Idaho.">
     <meta name="author" content="Vlad Mykhailovskyi">
+    <link rel="stylesheet" type="text/css" href="/weather/css-frinklin-id/weather-site.css" media="screen">
     <title>Franklin, ID | Weather Site</title>
 </head>
 <body>
-    <header>
-        <img src="weather-site-images/logo.jpg" alt="This is the  Wheather Site Logo.">
-        <h1>The Weather Site</h1>
+    <header id="page-header">
+        
+                <img id="logo" src="weather-site-images/logo.jpg" alt="This is the  Wheather Site Logo.">
+                <h1 id="site-brand">The Weather Site</h1>
+       
+        
     </header>
 
-    <nav>
-        <ul>
-            
-            <li><a href="#"></a>Current</li>
-            <li><a href="#"></a>Search</li>
-            <li><a href="#"></a>Franklin</li>
-            <li><a href="#"></a>Greenville</li>
-        </ul>
-    </nav>
+ 
+        <nav>
+                <ul>
+                    
+                    <li><a href="#"></a>Current</li>
+                    <li><a href="#"></a>Search</li>
+                    <li><a href="#"></a>Franklin</li>
+                    <li><a href="#"></a>Greenville</li>
+                </ul>
+            </nav>
+
+    
        
 
     <main>
         <section>
-            <h2>Franklin, ID</h2>
-            <ul>
+            <h2 id="city">Franklin, ID</h2>
+            <ul id="address">
                     <li><b>Zip:</b> 83237 |</li>
                     <li><b>Elevation:</b> 1514.246 ft. | </li>
                     <li><b>Location:</b> 42.07&deg; N, 111.79&deg; W</li>
@@ -37,15 +44,15 @@
                
         </section>
 
-        <div>
-        <section>
+        <div id="curWeather">
+        <section id="temp" class="box">
             <h3>Temperature</h3>
-            <p>40&deg;F </p>
-            <p>61&deg;F  41&deg;F</p>
-            <p>Precip: 0</p>
+            <p id="curTemp">40&deg;F </p>
+            <p><span id="max">61&deg;F</span>   <span id="min">41&deg;F</span></p>
+            <p>Feels like 25&deg;F</p>
         </section>
 
-        <section>
+        <section id="wind" class="box">
             <h3>Wind</h3>
             <img src="weather-site-images/wind-pointer.png" alt="This is the wind pointer.">
             <p>5mph</p>
@@ -53,13 +60,13 @@
             <p>Gusts: 18-12mph</p>
         </section>
 
-        <section>
+        <section id="summary" class="box">
             <h3>Rain</h3>
-             <img src="weather-site-images/rain.jpg" alt="This picture shows the weather condition">
+             <img id="rain" src="weather-site-images/rain.jpg" alt="This picture shows the weather condition">
          </section>
         </div>
         
-        <section>
+        <section id="hourly" class="box">
             <h3>Hourly Forecast</h3>
             <p>10am: 41&deg;F | 11am: 41&deg;F | 12pm: 41&deg;F | 1pm: 41&deg;F | 2pm: 41&deg;F | 3pm: 41&deg;F | 4pm: 42&deg;F | 5pm: 44&deg;F | 6pm: 44&deg;F | 7pm: 46&deg;F | 8pm: 49&deg;F | 9pm: 51&deg;F | 10pm: 55&deg;F </p>
          </section>
