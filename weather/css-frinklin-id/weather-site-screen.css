@@ -38,7 +38,7 @@ html {
   }
   .box
   {
-    background-color: rgba(200,200,200,.6);
+    background-color: rgba(200, 200, 200, 0.6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
@@ -84,22 +84,31 @@ html {
    #site-brand {
     font-size: 1.7em;
     font-weight: 600;
-    
+    margin: 0;
+    margin-top: 5px;
   }
   section ul li{
     display: inline-block; 
     list-style: none; 
 
   }
+   #gusts{
+    margin-top: -17px;
+  
+   }
+ a{
+   text-decoration: none;
+   color: white;
+ }
 
   #address{
-      margin-left: -30px;
+      margin-left: -35px;
       line-height: 4px; 
-      font-size: 10px;     
+      font-size: 10px;   
   }
 
   #city{
-      margin-left: 10px;
+      margin-left: 5px;
       margin-bottom: 12px;
   }
 
@@ -109,6 +118,7 @@ html {
     display: flex;
     background-color: #0e89d5;
     font-family: Helvetica;
+    margin-bottom: -15px;
   }
   #logo{
 
@@ -120,27 +130,23 @@ html {
     margin-right: 10px;
     }
 
-    h1 {
-      margin: 0;
-    }
-   #hourly{
-
-       white-space: nowrap;
-   }
    #scroll
    {
     overflow: auto;
+    white-space: nowrap;
    }
 
    #max{
      color: red;
+     padding-right: 7px;
    }
    #min{
      color: blue;
+     padding-left: 7px;
    }
    #curTemp{
      font-weight: 200;
      font-size: 4em;
-     line-height: 10px;
+     line-height: 5px;
    }
     
