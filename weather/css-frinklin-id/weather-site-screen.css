@@ -66,12 +66,12 @@ html {
 
   footer{
     margin-top: -15px;;
-    margin-bottom: 2em;
+    margin-bottom: 2.3em;
     background-color: #0e89d5;
    }
 
    #site-brand {
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 600;
     margin: 0;
     margin-top: 5px;
@@ -91,11 +91,14 @@ html {
   a{
    text-decoration: none;
    color: white;
+   display: block;
+   padding: .5em;
  }
 
   #city{
       margin-left: 5px;
       margin-bottom: 12px;
+      font-size: 1.5em;
   }
 
   #page-header{
@@ -133,16 +136,21 @@ html {
    }
 
    /* 3. This is styles that will be applied for mobile devises tomake our page look good on mobile  */
+   body > div{
+     width: 100vw;
+   }
+
    nav {
     position: fixed;
     bottom: 0;
     left: 0;
     background-color: #0e89d5;
-    width: 100%;
+    width: 100vw;
+    height: auto;
     color: white;
-    font-size: 12px;
-    line-height: 10px;
+    font-size: 10px;
     z-index: 1;
+    
   }
 
    #scroll{
