@@ -136,9 +136,7 @@ html {
    }
 
    /* 3. This is styles that will be applied for mobile devises tomake our page look good on mobile  */
-   body > div{
-     width: 100vw;
-   }
+ 
 
    nav {
     position: fixed;
