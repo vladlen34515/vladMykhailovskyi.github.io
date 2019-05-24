@@ -20,6 +20,8 @@
 
 /*1.2 The font was imported from google fonts */
 @import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+/* 2. This is general styles that will be applyed for all devises */
 html {
     box-sizing: border-box;
    }
@@ -36,44 +38,30 @@ html {
   h1,h2,h3,h4,h5,h6 {
     font-family: sansita, Eurostyle, sans-serif;
   }
-  .box
-  {
+
+  .box{
     background-color: rgba(200, 200, 200, 0.6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
     text-align: center;
   }
+
   nav ul li { 
     display: inline-block; 
     list-style: none; 
     margin-right: 15px;
   }
+
   #speed{
     z-index: 1;
     margin-top: -100px;
     margin-bottom: 100px;
   }
 
-  nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #0e89d5;
-    width: 100%;
-    color: white;
-    font-size: 12px;
-    line-height: 10px;
-    z-index: 1;
-  }
-  #curWeather
-  {
+  #curWeather{
       background-size: cover;
       background-image: url(/weather/weather-site-images/rain.jpg);
-  }
-  #rain {
-      max-width: 250px;
-      opacity: 0.75;
   }
 
   footer{
@@ -87,39 +75,36 @@ html {
     margin: 0;
     margin-top: 5px;
   }
+
   section ul li{
     display: inline-block; 
     list-style: none; 
 
   }
+
    #gusts{
     margin-top: -17px;
   
    }
- a{
+
+  a{
    text-decoration: none;
    color: white;
  }
-
-  #address{
-      margin-left: -35px;
-      line-height: 4px; 
-      font-size: 10px;   
-  }
 
   #city{
       margin-left: 5px;
       margin-bottom: 12px;
   }
 
-  #page-header
-  {
+  #page-header{
     height: 55px;
     display: flex;
     background-color: #0e89d5;
     font-family: Helvetica;
     margin-bottom: -15px;
   }
+
   #logo{
 
     width: 50px ;
@@ -130,23 +115,49 @@ html {
     margin-right: 10px;
     }
 
-   #scroll
-   {
-    overflow: auto;
-    white-space: nowrap;
-   }
-
    #max{
      color: red;
      padding-right: 7px;
    }
+
    #min{
      color: blue;
      padding-left: 7px;
    }
+
    #curTemp{
      font-weight: 200;
      font-size: 4em;
      line-height: 5px;
    }
+
+   /* 3. This is styles that will be applied for mobile devises tomake our page look good on mobile  */
+   nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #0e89d5;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    line-height: 10px;
+    z-index: 1;
+  }
+
+   #scroll{
+    overflow: auto;
+    white-space: nowrap;
+   }
+
+   #address{
+    margin-left: -35px;
+    line-height: 4px; 
+    font-size: 10px;   
+   }
+
+   #rain {
+    max-width: 250px;
+    opacity: 0.75;
+   }
+
     
