@@ -46,11 +46,25 @@ html {
     border-radius: 15px;
     text-align: center;
   }
+  nav ul{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+    
+  }
 
-  nav ul li { 
-    display: inline-block; 
-    list-style: none; 
-    margin-right: 15px;
+  #nav ul li { 
+     
+    display: inline-block;
+    list-style: none;
+    
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    
   }
 
   #speed{
@@ -71,13 +85,13 @@ html {
    }
 
    #site-brand {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 600;
     margin: 0;
     margin-top: 5px;
   }
 
-  section ul li{
+  section #address li {
     display: inline-block; 
     list-style: none; 
 
@@ -88,12 +102,7 @@ html {
   
    }
 
-  a{
-   text-decoration: none;
-   color: white;
-   display: block;
-   padding: .5em;
- }
+  
 
   #city{
       margin-left: 5px;
@@ -138,7 +147,9 @@ html {
    /* 3. These are styles that will be applied for mobile devises to make our page look good on mobile  */
  
 
-   nav {
+   nav{
+
+    
     position: fixed;
     bottom: 0;
     left: 0;
@@ -146,7 +157,7 @@ html {
     width: 100vw;
     height: auto;
     color: white;
-    font-size: 10px;
+    font-size: 13.5px;
     z-index: 1;
     
   }
