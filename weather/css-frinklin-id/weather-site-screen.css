@@ -220,6 +220,8 @@ html {
   .box{
     width: 33%;
   }
-  
+  footer {
+    margin-bottom: 2px;
+  }
 }
     
