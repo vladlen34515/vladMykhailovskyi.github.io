@@ -106,7 +106,7 @@ html {
   #city{
       margin-left: 5px;
       margin-bottom: 12px;
-      font-size: 1.5em;
+      font-size: 1.6em;
   }
 
   #page-header{
@@ -170,7 +170,7 @@ html {
    #address{
     margin-left: -35px;
     line-height: 4px; 
-    font-size: 10px;   
+    font-size: 3vw;   
    }
 
    #rain {
@@ -182,10 +182,10 @@ html {
 @media only screen and (min-width: 768px){
 
   #address{
-    font-size: 1.1em;
+    font-size: 1em;
   }
   #city{
-    font-size: 1.8em;
+    font-size: 1.9em;
   }
   #logo{
     width: 70px;
