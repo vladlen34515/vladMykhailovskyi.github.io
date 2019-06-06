@@ -182,7 +182,7 @@ h1 {
 		background-image: url(/responsive_media/images/nps-logo100.png),
 		url(/responsive_media/images/grand-canyon768.jpg);
 		background-repeat: no-repeat,no-repeat;
-		background-position: right, fixed;
+		background-position: right, left;
 		background-size: auto, cover;
 	}
 	.page-nav {
