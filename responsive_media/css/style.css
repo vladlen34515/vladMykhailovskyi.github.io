@@ -55,7 +55,7 @@ h1 {
 	url(/responsive_media/images/banner400.jpg);
 	background-repeat: no-repeat, no-repeat;
 	background-position: right, left;
-	background-size: auto, cover;
+	background-size: contain, cover;
 	
 }
 
