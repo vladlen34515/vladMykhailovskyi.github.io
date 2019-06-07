@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/weather/weather-optimization/weather-images-css/weather-images.css">
     <title>Weather Images Page</title>
 </head>
 <body>
@@ -23,9 +24,9 @@
             <img src="/weather/weather-optimization/weather-new-images/clear230.jpg" alt="clear image for small screen">
        </picture>
        <ul class="info">
-        <li>Name: clear768.jpeg</li>
-        <li>Dimesions: </li>
-        <li>Weight: </li>
+        <li>Name: clear230.jpeg</li>
+        <li>Dimesions: <span id= "dimenC">230 x 144</span> </li>
+        <li>Weight: <span id= "weightC">7.46kb</span></li>
       </ul>
       
     </section>
@@ -37,9 +38,9 @@
                  <img src="/weather/weather-optimization/weather-new-images/rain230.jpg" alt="rain image for small screen">
             </picture>
             <ul class="info">
-             <li>Name: </li>
-             <li>Dimesions: </li>
-             <li>Weight: </li>
+             <li>Name: rain230.jpeg </li>
+             <li>Dimesions: <span id="dimenR">230 x 153</span> </li>
+             <li>Weight: <span id="weightR">4.41kb</span> </li>
            </ul>
     </section>
     <section class="weather" id="clouds">
@@ -49,16 +50,34 @@
                  <img src="/weather/weather-optimization/weather-new-images/clouds230.jpg" alt="clouds image for small screen">
             </picture>
             <ul class="info">
-             <li>Name: </li>
-             <li>Dimesions: </li>
-             <li>Weight: </li>
+             <li>Name: clouds230.jpeg </li>
+             <li>Dimesions:  <span id="dimenCl">230 x 230</span></li>
+             <li>Weight:  <span id="weightCl">9.40kb</span></li>
            </ul>
     </section>
     <section class="weather" id="snow">
             <h2>Snow Optimized</h2>
+            <picture>
+                <source media="(min-width: 768px)" srcset="/weather/weather-optimization/weather-new-images/snow768.jpg">
+                 <img src="/weather/weather-optimization/weather-new-images/snow230.jpg" alt="snow image for small screen">
+            </picture>
+            <ul class="info">
+             <li>Name: snow230.jpeg </li>
+             <li>Dimesions:  <span id="dimenS">230 x 345</span> </li>
+             <li>Weight: <span id="weightS">14kb</span> </li>
+           </ul>
     </section>
     <section class="weather" id="fog">
             <h2>Fog Optimized</h2>
+            <picture>
+                <source media="(min-width: 768px)" srcset="/weather/weather-optimization/weather-new-images/fog768.jpg">
+                 <img src="/weather/weather-optimization/weather-new-images/fog230.jpg" alt="fog image for small screen">
+            </picture>
+            <ul class="info">
+             <li>Name: fog230.jpeg </li>
+             <li>Dimesions: <span id="dimenF">230 x 129</span> </li>
+             <li>Weight:  <span id="weightF">1.47kb</span> </li>
+           </ul>
     </section>
     
     <footer><p>&copy;2019 Vladlen Mykhailovskyi</p></footer>

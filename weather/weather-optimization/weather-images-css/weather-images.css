@@ -1,0 +1,140 @@
+@media only screen and (min-width: 768px)
+{
+  
+    li > #dimenC
+    {
+    visibility: hidden;
+    position: relative;
+    }
+
+  li > #dimenC:after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "768 x 480";
+}
+ li > #weightC
+ {
+    visibility: hidden;
+    position: relative;  
+ }
+ li > #weightC:after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "66.9kb";
+}
+
+li > #dimenR
+{
+visibility: hidden;
+position: relative;
+}
+
+li > #dimenR:after{
+visibility: visible;
+position: absolute;
+top: 0;
+right: 0;
+content: "768 x 512";
+}
+li > #weightR
+{
+visibility: hidden;
+position: relative;  
+}
+li > #weightR:after{
+visibility: visible;
+position: absolute;
+top: 0;
+right: 0;
+content: "21.3kb";
+}
+
+li > #dimenCl
+{
+visibility: hidden;
+position: relative;
+}
+
+li > #dimenCl:after{
+visibility: visible;
+position: absolute;
+top: 0;
+right: 0;
+content: "768 x 768";
+}
+li > #weightCl
+{
+visibility: hidden;
+position: relative;  
+}
+li > #weightCl:after{
+visibility: visible;
+position: absolute;
+top: 0;
+right: 0;
+content: "49.2kb";
+}
+
+li > #dimenS
+{
+visibility: hidden;
+position: relative;
+}
+
+li > #dimenS:after{
+visibility: visible;
+position: absolute;
+top: 0;
+right: 0;
+content: "768 x 1152";
+}
+li > #weightS
+{
+visibility: hidden;
+position: relative;  
+}
+li > #weightS:after{
+visibility: visible;
+position: absolute;
+top: 0;
+right: 0;
+content: "96.6kb";
+}
+
+li > #dimenF
+{
+visibility: hidden;
+position: relative;
+}
+
+li > #dimenF:after{
+visibility: visible;
+position: absolute;
+top: 0;
+right: 0;
+content: "768 x 432";
+}
+li > #weightF
+{
+visibility: hidden;
+position: relative;  
+}
+li > #weightF:after{
+visibility: visible;
+position: absolute;
+top: 0;
+right: 0;
+content: "7.42kb";
+}
+}
+
+li {
+    font-size: 1.2em;
+}
+
+
+
