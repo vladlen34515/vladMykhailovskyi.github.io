@@ -85,9 +85,9 @@ visibility: hidden;
 position: relative;
 }
 
-li > #dimenS:after{
+li > #dimenS:before {
 visibility: visible;
-position: absolute;
+/* position: absolute; */
 top: 0;
 right: 0;
 content: "768 x 1152";
@@ -95,7 +95,8 @@ content: "768 x 1152";
 li > #weightS
 {
 visibility: hidden;
-position: relative;  
+position: relative;
+padding-right: 20px;  
 }
 li > #weightS:after{
 visibility: visible;
