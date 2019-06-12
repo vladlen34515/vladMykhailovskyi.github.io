@@ -45,13 +45,92 @@ html {
     border: 1px solid;
     border-radius: 15px;
     text-align: center;
+    position: relative;
   }
   #wind{
-    background-image: url(/weather/weather-site-images/wind-pointer.png);
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/weather-optimization/weather-new-images/wind-pointer.png');
+    margin : 0 auto;
+    
+  }
+  .rain{
+   background-image: url(/weather/weather-optimization/weather-new-images/rain230.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+  }
+  .fog{
+    background-image: url(/weather/weather-optimization/weather-new-images/fog230.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 300px;
+  }
+  .snow{
+    background-image: url(/weather/weather-optimization/weather-new-images/snow230.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .clear{
+    background-image: url(/weather/weather-optimization/weather-new-images/clear230.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .cloudy{
+    background-image: url(/weather/weather-optimization/weather-new-images/clouds230.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .rainL{
+    background-image: url(/weather/weather-optimization/weather-new-images/rain768.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   .fogL{
+     background-image: url(/weather/weather-optimization/weather-new-images/fog768.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+   .snowL{
+     background-image: url(/weather/weather-optimization/weather-new-images/snow768.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+   .clearL{
+     background-image: url(/weather/weather-optimization/weather-new-images/clear768.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+   .cloudyL{
+     background-image: url(/weather/weather-optimization/weather-new-images/clouds768.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+  #windp
+  {
+    margin-top: 17px;
+  }
+  .w{
+   transform: rotate(270deg);
+  }
+  .e{
+   transform: rotate(90deg);
+  }
+  .s{
+   transform: rotate(180deg);
+  }
+  .sw{
+    transform: rotate(225deg);
+  }
+  .se{
+    transform: rotate(135deg);
+  }
+  .nw{
+    transform: rotate(315deg);
+  }
+  .ne{
+    transform: rotate(45deg);
+  }
+  .n{
+    transform: rotate(0deg);
   }
   nav ul{
     
@@ -76,13 +155,14 @@ html {
 
   #speed{
     z-index: 1;
-    margin-top: 90px;
+    margin-top: -90px;
   }
-
-  #curWeather{
-      background-size: cover;
-      background-image: url(/weather/weather-site-images/rain.jpg);
+  #summary
+  {
+   
+    height: 300px;
   }
+  
 
   footer{
     margin-top: -15px;;
@@ -145,6 +225,7 @@ html {
 
    /* 3. These are styles that will be applied for mobile devises to make our page look good on mobile  */
  
+   
 
    nav{
 
@@ -190,6 +271,8 @@ html {
 /*4 These are styles for large screen */
 @media only screen and (min-width: 768px){
 
+
+
   #address{
     font-size: 1em;
   }
@@ -233,8 +316,11 @@ html {
   }
   #wind
   {
-    width: 34%;
+    right: 178px;
+  
   }
+ 
+  
   footer {
     margin-bottom: 2px;
   }

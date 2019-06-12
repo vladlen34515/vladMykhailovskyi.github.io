@@ -38,34 +38,38 @@
             <h2 id="city">Franklin, ID</h2>
             <ul id="address">
                     <li><b>Zip:</b> 83237 |</li>
-                    <li><b>Elevation:</b> 1514.246 ft. | </li>
+                    <li><b>Elevation:</b> <span id="elevation"></span>ft. | </li>
                     <li><b>Location:</b> 42.07&deg; N, 111.79&deg; W</li>
             </ul>
             
                
         </section>
 
-        <div id="curWeather">
+        <div id="curWeather" class="change">
         <section id="temp" class="box">
             <h3>Temperature</h3>
             <p id="curTemp">40&deg;F </p>
             <p><span id="max">61&deg;F</span>   <span id="min">41&deg;F</span></p>
-            <p id="feels">Feels like 25&deg;F</p>
+            <p id="feels"></p>
         </section>
 
-        <section id="wind" class="box">
-            <h3>Wind</h3>
-            <p  id="speed">5mph</p>
-            <div class="windData">
-                <p id="direction">Direction: SW </p>
-                <p id="gusts">Gusts: 18-12mph</p>
-            </div>
+        <section id="windInfo" class="box">
+                <h3 id="windp">Wind</h3>
+                <div id="wind" class = 'w'>
+                </div>
+                <p  id="speed">5mph</p>
+                <div class="windData">
+                    <p id="direction">Direction: SW </p>
+                    <p id="gusts">Gusts: 18-12mph</p>
+                </div>
+            
+            
            
         </section>
 
-        <section id="summary" class="box">
-            <h3>Rain</h3>
-             <img id="rain" src="weather-site-images/rain.jpg" alt="This picture shows the weather condition">
+        <section id="summary1" class="box">
+            <h3 id="condition">Rain</h3>
+             <div id="summary" class='i'></div>
          </section>
         </div>
         
@@ -79,5 +83,6 @@
         <p>&copy;2019 - The Weather Site</p>
     </footer>
     </div>
+    <script src="/weather/js/functions.js"></script>
 </body>
 </html>
