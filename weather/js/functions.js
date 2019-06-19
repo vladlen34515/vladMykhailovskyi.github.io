@@ -159,10 +159,10 @@ let speed = 5;
 let temp = 40;
 buildWC(speed,temp);
 //direction call
-let directionW = 'SW';
+let directionW = "SW";
 direction(directionW);
 //condition call
-let weather = "Rainy Weather";
+let weather = "Wet Weather";
 let condition = getCondition(weather);
 console.log(condition);
 //call change summary
