@@ -54,6 +54,21 @@ html {
     margin : 0 auto;
     
   }
+  #list-temp
+  {
+    display: flex;
+
+  }
+
+  #list-temp li {
+    list-style-type: none;
+    padding-right: 6px;
+  }
+ #status
+ {
+   margin-top: 17px;
+ }
+  
   .rain{
    background-image: url(/weather/weather-optimization/weather-new-images/rain230.jpg);
    background-position: center;
@@ -252,9 +267,11 @@ html {
     margin-right: 10px;
     }
 
-   #scroll{
+   #list-temp{
     overflow: auto;
     white-space: nowrap;
+    padding-left: 15px;
+    
    }
 
    #address{
@@ -267,6 +284,10 @@ html {
     max-width: 250px;
     opacity: 0.75;
    }
+
+   .hide{
+    display: none;
+  }
    
 /*4 These are styles for large screen */
 @media only screen and (min-width: 768px){

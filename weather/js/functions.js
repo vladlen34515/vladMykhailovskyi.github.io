@@ -7,7 +7,7 @@ console.log('My javascript is being read.');
 //Calculate the wind Chil
 function buildWC(speed,temp)
 {
-   const feelTemp = document.getElementById('feels');
+   let feelTemp = document.getElementById('feels');
 
    //compute windchill
    let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
@@ -25,9 +25,9 @@ function buildWC(speed,temp)
 }
 
 //this finction rotate the wind pointer
-function direction(direction)
+function Ddirection(direction)
 {
-    const wind = document.getElementById('wind');
+    let wind = document.getElementById('wind');
 
     // check the direction
     switch(direction)
@@ -77,7 +77,8 @@ function getCondition(conditionW)
 {
     //check the condition and return appropriate condition
     if (conditionW.includes('Wet') ||
-        conditionW.includes('Rainy'))
+        conditionW.includes('Rainy') ||
+        conditionW.includes('Thunderstorms'))
     {
        return "Rain";
     }
@@ -104,9 +105,9 @@ function getCondition(conditionW)
 //this function chenge the summary and picture
 function changeSummary(condition)
 {
-    const cond = document.getElementById('condition');
-    const img = document.getElementById('summary');
-    const curWeather = document.getElementById('curWeather');
+    let cond = document.getElementById('condition');
+    let img = document.getElementById('summary');
+    let curWeather = document.getElementById('curWeather');
     
     switch(condition)
     {
@@ -152,24 +153,44 @@ function converMeters(meters)
     return feet;
 }
 
+// Convert, Format time to 12 hour format
+function format_time(hour) {
+    if(hour > 23){ 
+     hour -= 24; 
+    } 
+    let amPM = (hour > 11) ? "pm" : "am"; 
+    if(hour > 12) { 
+     hour -= 12; 
+    } 
+    if(hour == 0) { 
+     hour = "12"; 
+    } 
+    return hour + amPM;
+   }
+
+   // Build the hourly temperature list
+function buildHourlyData(nextHour,hourlyTemps) {
+    // Data comes from a JavaScript object of hourly temp name - value pairs
+    // Next hour should have a value between 0-23
+    // The hourlyTemps variable holds an array of temperatures
+    // Line 8 builds a list item showing the time for the next hour 
+    // and then the first element (value in index 0) from the hourly temps array
+     let hourlyListItems = '<li>' + format_time(nextHour) + ': ' + hourlyTemps[0] + '&deg;F |</li>';
+     // Build the remaining list items using a for loop
+     for (let i = 1, x = hourlyTemps.length; i < x; i++) {
+      hourlyListItems += '<li>'+  format_time(nextHour+i) + ': ' + hourlyTemps[i] + '&deg;F |</li>';
+     }
+     console.log('HourlyList is: ' +hourlyListItems);
+     return hourlyListItems;
+    }
+    let date = new Date(); 
+    let nextHour = date.getHours() + 1;
 
 
-//wc call
-let speed = 5;
-let temp = 40;
-buildWC(speed,temp);
-//direction call
-let directionW = "SW";
-direction(directionW);
-//condition call
-let weather = "Wet Weather";
-let condition = getCondition(weather);
-console.log(condition);
-//call change summary
-changeSummary(condition);
-//call convert meters
-let meters = 461.55;
-let feet = converMeters(meters);
-// insert feet into html document
-const elevation = document.getElementById('elevation');
-elevation.innerHTML = feet;
+
+
+
+
+
+
+
