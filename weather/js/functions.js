@@ -78,7 +78,8 @@ function getCondition(conditionW)
     //check the condition and return appropriate condition
     if (conditionW.includes('Wet') ||
         conditionW.includes('Rainy') ||
-        conditionW.includes('Thunderstorms'))
+        conditionW.includes('Thunderstorms')||
+        conditionW.includes('Rain'))
     {
        return "Rain";
     }
@@ -96,7 +97,7 @@ function getCondition(conditionW)
     {
         return "Fog";
     }
-    else (conditionW.includes('Snowy'))
+    else if(conditionW.includes('Snowy'))
     {
         return "Snow";
     }
