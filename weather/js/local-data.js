@@ -1,10 +1,28 @@
 let pageNav = document.getElementById('nav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main-content');
-
 let weatherURL = "/weather/js/weather.json";
+
+pageNav.addEventListener("click", function(evt){
+  let cityName = evt.target.innerHTML;
+  console.log(cityName);
+
+// check city
+switch (cityName) {
+  case "Franklin":
+    case "Greenville":
+      case "Springfield":
+        evt.preventDefault();
+    break;
+
+ 
+}
+
+fetchData(weatherURL);
+
+
 function fetchData(weatherURL){
-  let cityName = 'Greenville'; // The data we want from the weather.json file
+   // The data we want from the weather.json file
   fetch(weatherURL)
   .then(function(response) {
   if(response.ok){
@@ -110,4 +128,4 @@ function fetchData(weatherURL){
   statusContainer.innerHTML = 'Sorry, the data could not be processed.';
   })
 }
-fetchData(weatherURL);
+})
