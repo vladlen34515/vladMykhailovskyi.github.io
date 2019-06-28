@@ -71,11 +71,16 @@ function fetchData(weatherURL){
     // Gets the title element so it can be worked with
     let pageTitle = document.getElementById('title');
     // Create a text node containing the full name 
+    if(pageTitle.childNodes.length > 1)
+    {
+      pageTitle.childNodes[0].remove();
+    }
     let fullNameNode = document.createTextNode(fullName);
     // inserts the fullName value before any other content that might exist
     pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
     // When this is done the title should look something like this:
     // Greenville, SC | The Weather Site
+    
 
     // Set the Location information
     // Get the h1 to display the city location
