@@ -52,6 +52,8 @@ function fetchData(weatherURL){
     let min = g.Low;
     let max = g.High;
 
+    
+
     // Get the wind data 
     let wind = g.Wind;
     let direction = g.Direction;
