@@ -348,6 +348,7 @@ function getTemp(URL)
            let wSpeed = data.properties.periods[0].windSpeed;
            let gusts =  data.properties.periods[0].windSpeed;
            let direction = data.properties.periods[0].windDirection;
+           let detF = data.properties.periods[0].detailedForecast;
 
            storage.setItem("minTemp",min);
            storage.setItem("maxTemp",max);
@@ -355,6 +356,7 @@ function getTemp(URL)
            storage.setItem("wSpeed",wSpeed);
            storage.setItem("gusts",gusts);
            storage.setItem("direction", direction);
+           storage.setItem("detF", detF);
 
             // Build the page for viewing 
             buildPage();
@@ -402,6 +404,9 @@ function buildPage()
 
     let wDirection = document.getElementById("direction");
     wDirection.innerHTML = "Direction: " + storage.getItem("direction");
+
+    let detail = document.getElementById("detail");
+    detail.innerHTML = storage.getItem("detF");
 
     Ddirection(storage.getItem("direction"));
 
