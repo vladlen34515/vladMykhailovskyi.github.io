@@ -155,16 +155,15 @@ html {
     padding-left: 0px;
     
   }
-  p#detail 
+  #detail
   {
-    margin-top : 1;
+    margin-top: -55px;
+    margin-bottom: 40px;
   }
-  #summary
-  {
-    max-height: 200px;
-    max-width: 200px;
-    margin-left: 155px; 
-  }
+ #summary
+ {
+   margin-top: -32px;
+ }
   #nav ul li { 
      
     display: inline-block;
