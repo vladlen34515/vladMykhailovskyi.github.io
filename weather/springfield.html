@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is weather website for Franklin Idaho.">
+    <meta name="author" content="Vlad Mykhailovskyi">
+    <link rel="stylesheet" type="text/css" href="/weather/css-frinklin-id/weather-site-screen.css" media="screen">
+    <title id="title"> | Weather Site</title>
+</head>
+<body>
+    <div>
+    <header id="page-header">
+        
+                <img id="logo" src="weather-site-images/logo.jpg" alt="This is the  Wheather Site Logo.">
+                <h1 id="site-brand">The Weather Site</h1>
+       
+        
+    </header>
+
+ 
+        <nav id="nav">
+                <ul>
+                    
+                    <li><a href="/weather/index.html">Current</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a class="f" href="/weather/weather-site.html">Franklin</a></li>
+                    <li><a href="/weather/greenwill.html">Greenville</a></li>
+                    <li><a href="/weather/springfield.html">Springfield</a></li>
+                </ul>
+            </nav>
+
+    
+       
+     <section id="status"><h4>Please be patient while I get your weather information.</h4></section>
+    <main id="main-content" class="hide">
+        <section>
+            <h2 id="city">Franklin, ID</h2>
+            <ul id="address">
+                    <li><b>Zip:</b> 83237 |</li>
+                    <li><b>Elevation:</b> <span id="elevation"></span>ft. | </li>
+                    <li id="location"><b>Location:</b> 42.07&deg; N, 111.79&deg; W</li>
+            </ul>
+            
+               
+        </section>
+
+        <div id="curWeather" class="change">
+        <section id="temp" class="box">
+            <h3>Temperature</h3>
+            <p id="curTemp">40&deg;F </p>
+            <p><span id="max">61&deg;F</span>   <span id="min">41&deg;F</span></p>
+            <p id="feels"></p>
+        </section>
+
+        <section id="windInfo" class="box">
+                <h3 id="windp">Wind</h3>
+                <div id="wind" class = 'w'>
+                </div>
+                <p  id="speed">5mph</p>
+                <div class="windData">
+                    <p id="direction">Direction: SW </p>
+                    <p id="gusts">Gusts: 18-12mph</p>
+                </div>
+            
+            
+           
+        </section>
+
+        <section id="summary1" class="box">
+            <h3 id="condition">Rain</h3>
+             <div id="summary" class='i'></div>
+         </section>
+        </div>
+        
+        <section id="hourly" class="box">
+            <h3>Hourly Forecast</h3>
+            <ul id="list-temp"></ul>
+         </section>
+
+    </main>
+    <footer>
+        <p>&copy;2019 - The Weather Site</p>
+    </footer>
+    </div>
+    <script src="/weather/js/functions.js"></script>
+    <script src="/weather/js/local-data.js"></script>
+</body>
+</html>
