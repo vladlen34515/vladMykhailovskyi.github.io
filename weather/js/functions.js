@@ -78,7 +78,7 @@ function Ddirection(direction) {
 
 function toFor(cel)
 {
-    let foren = (cel * 9/5) + 32;
+    let foren = cel * 9 / 5 + 32;
     foren = Math.floor(foren);
     console.log(foren);
     return foren; 
@@ -289,6 +289,8 @@ function getWeather(stationId) {
       // Store weather information to localStorage 
       let temp = data.properties.temperature.value;
       storage.setItem("Temp", temp);
+      let condition = data.properties.textDescription;
+      storage.setItem("condition",condition);
    
       // Build the page for viewing 
       
@@ -344,7 +346,6 @@ function getTemp(URL)
             
            let max = data.properties.periods[0].temperature;
            let min = data.properties.periods[1].temperature;
-           let condition = data.properties.periods[0].shortForecast;
            let wSpeed = data.properties.periods[0].windSpeed;
            let gusts =  data.properties.periods[0].windSpeed;
            let direction = data.properties.periods[0].windDirection;
@@ -352,7 +353,6 @@ function getTemp(URL)
 
            storage.setItem("minTemp",min);
            storage.setItem("maxTemp",max);
-           storage.setItem("condition",condition);
            storage.setItem("wSpeed",wSpeed);
            storage.setItem("gusts",gusts);
            storage.setItem("direction", direction);
