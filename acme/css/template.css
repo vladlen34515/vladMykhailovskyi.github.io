@@ -1,0 +1,227 @@
+
+html{
+    box-sizing: border-box;
+}
+body{
+    
+    padding: 0;
+    background-image: url(/acme/images/site/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+h2 
+{
+    margin-top: 3px;
+}
+
+.hide
+{
+    display: none;
+}
+#flex
+{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+#product
+{
+    width: 150px;
+    max-height: 150px;
+    margin-bottom: 40px;
+    float: left;
+    
+}
+#priceC
+{
+    margin-top: 43px;
+    margin-left: 175px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #de2226;
+}
+#back
+{
+    background-color: white;
+}
+#nav-bar
+{
+    background-color: #de2226;
+    width: 100%;
+    padding: 0.1px;
+    
+}
+#nav-list
+{
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+    padding-left: 7px;
+    margin-top: 15px;
+    margin-bottom: 9px;   
+}
+#cont-title
+{
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+li a{
+    font-size: 16.5px;
+    color:white;
+    padding: 13px 7px 10px 7px;
+    
+}
+#nav-list a:hover
+{
+  background-color: #ffff;
+  color:#de2226;
+}
+hr{
+    padding: 1px;
+    margin-top: 63px;
+    background-color: black;
+}
+
+footer
+{
+    text-align: center;
+}
+
+#roket li
+{
+  list-style-type: none;
+}
+#desc-l li
+{
+    list-style-type: none;
+    
+}
+
+#insert 
+{
+    height: 237px;
+    float: left;
+    margin-right: 20px; 
+    margin-top: 7px;
+    margin-left: 7px;
+}
+#p-descr
+{
+    margin-top: 7px;
+    margin-right: 12px; 
+}
+#roket
+{
+    margin: 0;
+    color: #990033;
+    padding-left: 7px;
+    font-size: 15px;
+}
+#imgB
+{
+    background-image: url(/acme/images/site/feature.jpg);
+    background-size: cover;
+    height: 173px;
+    margin-top: 3px;
+    display: flex;
+    justify-content: flex-end;
+}
+#recep
+{
+    max-width: 380px;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#recep li{
+    padding-right: 45px;
+    padding-left: 45px;
+    background-color: #808080;
+    margin: 2px;
+}
+#sec1
+{
+    background-color: rgba(200, 200, 200, 0.6);
+    width: 50%;
+    height: 173px;
+    
+    
+}
+#actionbtn{
+    width: 140px;
+}
+h2{
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px)
+{
+    body
+    {
+        font-size: 21px;
+    }
+    #priceC
+    {
+        margin-top: 190px;
+    }
+    #back
+    {
+        margin: 0px 300px 0px 100px;
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    li a 
+    {
+        font-size: 25px;
+        padding-right: 15px;
+    }
+    #roket
+    {
+        font-size: 20px;
+    }
+    #actionbtn{
+        width: 250px;
+    }
+    #sec1{
+    background-color: rgba(200, 200, 200, 0);
+    margin-right: -173px;
+    margin-top: 25px;
+    }
+    #imgB
+    {
+        height: 400px;
+        
+    }
+    #s-flex
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #product
+    {
+    width: 380px;
+    max-height: 380px;
+    margin-bottom: 100px;
+    float: left;
+    }
+    #priceC
+    {
+        margin-top: 150px;
+        margin-left: 407px;
+        font-weight: 700;
+        font-size: 45px;
+    }
+    #recep
+    {
+        width: 90%;
+    }
+    h2{
+        font-weight: 780;
+        margin-left: 3px;
+    }
+    
+}
