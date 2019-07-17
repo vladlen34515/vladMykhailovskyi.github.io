@@ -1,4 +1,18 @@
+/* ******************************
+*  Stylesheet for Screened Devices
+*  Created by: Vladlen Mykhailovskyi
+*  
+* 
+*
+*  1.  General Styles (for all pages and devices)
+*
+*  2.  Mobile First (styles specific to small screens)
+*
+*  3.  Large Screen Styles (Media Queries begin here)
+*
+* ****************************** */
 
+/* 1. General styles*/
 html{
     box-sizing: border-box;
 }
@@ -29,6 +43,7 @@ h2
 {
     padding-left: 12px;
 }
+/* 2. Mobile styles*/
 #product
 {
     width: 328px;
@@ -169,6 +184,8 @@ h2, h1{
     margin-left: 7px;
 }
 
+/* 3. Large screen styles*/
+
 @media only screen and (min-width: 768px)
 {
     body
@@ -237,7 +254,7 @@ h2, h1{
         width: 90%;
     }
     h2{
-        font-weight: 780;
+        font-weight: 700;
         margin-left: 7px;
     }
     #c-flex
